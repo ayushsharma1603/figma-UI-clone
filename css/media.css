@@ -1,0 +1,213 @@
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 1360px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 1024px) {
+  .frame3 {
+    font-size: 10px !important;
+  }
+  .frame11 {
+    font-size: 10px !important;
+  }
+  .frame9,
+  .frame8,
+  .frame7,
+  .frame10 {
+    gap: 14px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #exp {
+    font-size: 9px !important;
+  }
+}
+
+
+
+
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .frame18 {
+    justify-content: space-between !important;
+  }
+  .banner-content{
+    gap: 6px !important;
+  }
+  
+
+  .navbar-nav {
+    align-items: end;
+    margin-right: 0px !important;
+    justify-content: right;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: row-reverse !important;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-top: 36px !important;
+  }
+}
+
+@media (max-width: 1445px) {
+  .nav-link {
+    font-size: 8px !important;
+  }
+
+  #trusted + h1 {
+    font-size: 41px !important;
+  }
+  #exp {
+    font-size: 13px !important;
+  }
+
+  .banner-btns span {
+    font-size: 13px;
+  }
+  .button-overlay {
+    width: 80%;
+  }
+
+  .blueButton {
+    padding: 18px 20px !important;
+  }
+  .search-btn + button {
+    font-size: 8px !important;
+  }
+}
+
+@media (max-width: 321px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    --bs-gutter-x: 0; /* removes gutter-x */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-brand img {
+    width: 50%;
+    height: 50%;
+  }
+  .frame11 {
+    flex-direction: row !important;
+  }
+  .navNew {
+    justify-content: space-between;
+  }
+  .frame11 {
+    height: 67px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .frame3,
+  .frame11 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  #trusted {
+    font-size: 9px !important;
+    line-height: 14px !important;
+  }
+}
+
+@media (max-width: 426px) {
+  .frame3,
+  .frame11 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+@media (max-width: 376px) {
+  .frame9,
+  .frame8,
+  .frame7,
+  .frame10 {
+    gap: 8px !important;
+  }
+}
+
+@media (max-width: 661px) {
+  .frame8 {
+    display: none !important;
+  }
+  .border {
+    width: 26px !important;
+    height: 26px !important;
+  }
+}
+
+@media (max-width: 1040px) {
+  .navbar-expand-custom .navbar-collapse {
+    display: none !important;
+  }
+  .navbar-expand-custom .navbar-toggler {
+    display: block !important;
+  }
+}
+@media (min-width: 1041px) {
+  .navbar-expand-custom .navbar-collapse {
+    display: flex !important;
+  }
+  .navbar-expand-custom .navbar-toggler {
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 426px) {
+  #trusted + h1{
+ font-size: 20px !important;    
+  }
+  #trusted{
+            font-size: 6px !important;
+        line-height: 2px !important;
+
+  }
+      #exp {
+        font-size: 6px !important;
+    }
+    .banner-btns{
+      gap: 7px !important;
+    }
+    .blueButton{
+       padding: 1px 4px !important;   /* reduce height */
+    font-size: 5px !important;      /* slightly smaller text */
+    white-space: normal !important;  /* allow text to wrap */
+    border-radius: 20px !important;  
+    }
+
+    .blueButton + button{
+       padding: 1px 4px !important;  
+    white-space: normal !important;  /* allow text to wrap */
+    border-radius: 20px !important;  
+    }
+
+    .blueButton span {  /* reduce height */
+    font-size: 5px !important; 
+    }
+
+     .blueButton + button span{
+       padding: 12px 14px !important;   /* reduce height */
+    font-size: 5px !important;      /* slightly smaller text */
+    white-space: normal !important;  /* allow text to wrap */
+    border-radius: 20px !important;  
+    }
+}
+
+@media (max-width: 991.98px) { /* lg breakpoint */
+  .frame26 .custom-row {
+    flex-direction: column;
+  }
+}
