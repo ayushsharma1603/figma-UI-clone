@@ -2,6 +2,26 @@
     .container, .container-md, .container-sm {
         max-width: 1360px;
     }
+    .frame41{
+      max-width: 100% !important;
+    }
+
+    .imgDiv {
+  height: 544px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;   /* fill without distortion */
+  z-index: -1;         /* push image behind */
+  overflow: hidden;
+}
+
+.imgDiv img{
+  width: 100%;
+  height: auto;
+}
+
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {
@@ -22,6 +42,10 @@
 @media (max-width: 768px) {
   #exp {
     font-size: 9px !important;
+  }
+  .appointment-btn{
+    height: 50px ;
+    margin-top: 5% !important;
   }
 }
 
@@ -119,6 +143,14 @@
     font-size: 9px !important;
     line-height: 14px !important;
   }
+
+  .our-services h1{
+    font-size: 34px !important;
+  }
+
+  .col-lg-4 p{
+    font-size:16px;
+  }
 }
 
 @media (max-width: 426px) {
@@ -127,6 +159,8 @@
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
+
+  
 }
 
 @media (max-width: 376px) {
@@ -193,6 +227,9 @@
     white-space: normal !important;  /* allow text to wrap */
     border-radius: 20px !important;  
     }
+    .our-services{
+      align-items: center;
+    }
 
     .blueButton span {  /* reduce height */
     font-size: 5px !important; 
@@ -204,6 +241,18 @@
     white-space: normal !important;  /* allow text to wrap */
     border-radius: 20px !important;  
     }
+
+    .frame29{
+      --bs-gutter-x: 0rem !important;
+    }
+
+    .row{
+      --bs-gutter-x: 0rem !important;
+
+    }
+
+   
+  
 }
 
 @media (max-width: 991.98px) { /* lg breakpoint */

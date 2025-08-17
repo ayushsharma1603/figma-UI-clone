@@ -222,9 +222,8 @@ option {
   transition: all 0.7s ease;
 }
 
-.blueButton:hover{
-  box-shadow: 0px 3px 15px 0px #AEBDD3B2;
-
+.blueButton:hover {
+  box-shadow: 0px 3px 15px 0px #aebdd3b2;
 }
 
 .button-overlay {
@@ -364,24 +363,22 @@ option {
   color: white;
 }
 
-
-.blueButton:hover{
-  box-shadow: 0px 3px 15px 0px #AEBDD3B2;
+.blueButton:hover {
+  box-shadow: 0px 3px 15px 0px #aebdd3b2;
 }
 
-.sev-btn{
-
+.sev-btn {
   position: relative;
   transition: all 0.7s ease;
 }
 
-.sev-btn:hover{
+.sev-btn:hover {
   border: 1px solid white(255, 0, 0, 0.1);
-  
-  box-shadow: 0px 3px 15px 0px #AEBDD3B2;
+
+  box-shadow: 0px 3px 15px 0px #aebdd3b2;
 }
 
-.sev-btn div{
+.sev-btn div {
   opacity: 0;
   z-index: 1;
   transition: opacity 0.5s ease;
@@ -389,68 +386,61 @@ option {
 
 .sev-btn:hover div {
   opacity: 1;
-  
 }
-.sev-btn span{
+.sev-btn span {
   z-index: 2;
   position: relative; /* important */
 }
 
-.gradient-overlay{
-  
-  background: linear-gradient(180deg, #044BCE 37.5%, #DDEBFF 100%);
+.gradient-overlay {
+  background: linear-gradient(180deg, #044bce 37.5%, #ddebff 100%);
 
   opacity: 0;
   inset: 0;
   z-index: 0;
-
 }
 
-
-.gradient-overlay{
-  position: absolute;            /* stretch across full button (padding + content) */
-  border-radius: inherit;     /* match button radius */
+.gradient-overlay {
+  position: absolute; /* stretch across full button (padding + content) */
+  border-radius: inherit; /* match button radius */
   background: linear-gradient(90deg, #044bce, #ddebff);
-  z-index: 0;     
+  z-index: 0;
 }
 
-.frame26{
+.frame26 {
   background-color: red;
 }
 
-.frame26 .container{
+.frame26 .container {
   background-color: black;
 }
 
-.frame23{
+.frame23 {
   max-width: 550px;
   position: relative;
 }
 
-.frame23 img{
+.frame23 img {
   height: 100%;
   width: 100%;
-  
+
   border-radius: 16px;
 }
 
-.polygon{
+.polygon {
   position: absolute;
   max-width: 226px;
-   top: 0%;
+  top: 0%;
   right: 10px;
   box-sizing: content-box !important;
 }
 
-.polygon img{
+.polygon img {
   height: 100%;
   width: 100%;
-  
+
   border-radius: 16px;
 }
-
-
-
 
 .custom-row {
   display: flex;
@@ -458,36 +448,361 @@ option {
   align-items: center;
 }
 
-
-#our-services-btn{
+#our-services-btn {
   padding: 4px 18px;
   border: none;
-  background-color: #032C94;
+  background-color: #032c94;
   border-radius: 99px;
   color: white;
   max-width: 162px;
-
 }
 
-#our-services-btn + h1{
-  font-family: 'Urbanist';
-font-weight: 700;
-font-style: Bold;
-font-size: 48px;
-line-height: 100%;
-letter-spacing: 0%;
-vertical-align: middle;
-text-transform: capitalize;
-
-
+#our-services-btn + h1 {
+  font-family: "Urbanist";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
 }
 
-.our-services{
+.our-services {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.view-btn{
-  box-sizing: content-box;
+.col-lg-4 p {
+  font-size: 16px;
 }
+
+#cardImg img {
+  border-radius: 14px;
+}
+
+#cardImg {
+  box-shadow: 0px 0px 10.6px 0px #61616126;
+  border-radius: 16px;
+}
+
+.card-body {
+  padding: 0 !important;
+  padding-top: 1rem !important;
+}
+
+.card-body h5 {
+  font-family: "Urbanist";
+  color: #000d44;
+
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 34.01px;
+  vertical-align: middle;
+}
+
+.card-body p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #4c597a;
+}
+.card{
+  box-shadow: 0px 0px 10.6px 0px #61616126;
+
+}
+button{
+  transition: all 0.5s ease;
+}
+button:hover{
+box-shadow: 0px 0px 10.6px 0px #61616126;
+
+}
+
+.card-body a {
+  padding: 13.5px 29.76px;
+  overflow: hidden;
+
+  border-radius: 30px;
+  color: #000d44;
+
+  background: linear-gradient(180deg, #c2d4ff 37.5%, #f0f4ff 100%);
+
+  font-family: "Urbanist";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.card-body a:hover {
+  background: linear-gradient(180deg, #c2d4ff 37.5%, #f0f4ff 100%);
+  color: #000d44 !important;
+  box-shadow: 0px 2px 10px 0px #b8bfd080;
+}
+
+#cardImg {
+  position: relative;
+}
+
+#cardImg p {
+  position: absolute;
+  background-color: #b61b42;
+  color: white;
+  left: 0;
+  top: 74%;
+  padding: 8px 10px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.button-overlay2 {
+  position: absolute;
+  width: 87%;
+  top: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50%;
+  background-color: rebeccapurple;
+  border-radius: 30px;
+  background: linear-gradient(
+    180deg,
+    #f9fafd 0%,
+    rgba(249, 250, 253, 0) 78.65%
+  );
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.card-body a span {
+  position: relative; /* makes z-index work */
+  z-index: 2;
+}
+
+.row.gutter-48 {
+  --bs-gutter-x: 48px; /* horizontal gutter */
+  --bs-gutter-y: 48px; /* optional: vertical gutter */
+}
+
+.cards {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.banner2 h1{
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: 0%;
+  display: inline;
+  vertical-align: middle;
+
+  color: #00FFC8;
+
+}
+
+.banner2 span{
+  font-family: 'Outfit';
+font-weight: 400;
+font-size: 64px;
+line-height: 72px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: white;
+
+
+}
+
+.banner2 + p{
+  color: white;
+  font-family: 'DM Sans';
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+
+.banner-section {
+  position: relative;
+}
+
+.banner-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fill without distortion */
+  z-index: -1;         /* push image behind */
+}
+
+
+
+.bg-info{
+  height: 500px !important;
+}
+
+.padding-30{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.openQuote,.closeQuote{
+  box-sizing: content-box;
+
+}
+
+.openQuote{
+  align-self: flex-start;
+}
+
+.closeQuote{
+  align-self: flex-end;
+}
+
+
+
+.frame38{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  gap: 40px;
+  margin-bottom: 20px;
+
+
+}
+
+.name{
+  font-family: 'Outfit';
+font-weight: 600;
+font-size: 24px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: #000D44;
+
+}
+
+.name + p{
+  font-family: 'DM Sans';
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: #4C597A;
+
+}
+
+.name + p +p{
+  font-family: 'DM Sans';
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: #4C597A;
+
+}
+
+.btn-cont {
+gap: 25px;
+}
+
+.btn{
+  border: 1px solid #D8DDE1;
+}
+.btn:hover{
+  
+  background: #F5F7FA;
+}
+
+#testpic{
+  width :78px;
+  height:78px;
+  overflow: hidden;
+}
+#testpic img{
+  
+  border-radius: 50%;
+   position: relative !important;
+   height: 100%;
+   width: 100%;
+   z-index: 2;
+}
+
+.frame41{
+  max-width: 490px;
+  box-shadow: 0px 0px 10.6px 0px #61616126;
+
+}
+
+form{
+  font-family: 'DM Sans' !important;
+font-weight: 400 !important;
+font-size: 16px !important;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+color: #788094 !important;
+
+}
+
+form input, form select{
+  background-color: #F5F7FA !important;
+height: 54px;
+border-radius: 27px;
+
+padding-left: 25px !important;
+color: #788094;
+
+}
+
+form select, form select option{
+  text-align: left;
+  
+color: #788094;
+}
+
+.appointment-btn{
+  width: 100% !important;
+    font-family: 'DM Sans' !important;
+font-weight: 400 !important;
+font-size: 16px !important;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+  color: white !important;
+
+  margin-top: 10%;
+}
+
+.appointment-btn .button-overlay{
+  width: 94% !important;
+}
+
+

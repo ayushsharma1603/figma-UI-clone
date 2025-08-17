@@ -1,1 +1,1 @@
-This is a UI clone replicated from figma of westbay surgery website
+This is a UI clone replicated from figma of westbay surgery website.
