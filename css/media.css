@@ -1,13 +1,9 @@
 @media (max-width: 1445px) {
-  .nav-link {
-    font-size: 8px !important;
-  }
-
   #trusted + h1 {
-    font-size: 41px !important;
+    font-size: 41px;
   }
   #exp {
-    font-size: 13px !important;
+    font-size: 13px;
   }
 
   .banner-btns span {
@@ -16,25 +12,29 @@
   .button-overlay {
     width: 80%;
   }
-
-  .blueButton {
-    padding: 18px 20px !important;
-  }
   .search-btn + button {
     font-size: 8px !important;
   }
 }
 
-@media (min-width: 1041px) {
-  .navbar-expand-custom .navbar-collapse {
-    display: flex !important;
-  }
-  .navbar-expand-custom .navbar-toggler {
-    display: none !important;
+@media (max-width: 1342px) {
+  .nav1 {
+    font-size: 8px;
   }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1233px) {
+  .frame3,
+  .frame11 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  .navNew {
+    padding: 12px 0px;
+  }
+}
+
+@media (min-width: 1041px) {
   .navbar-expand-custom .navbar-collapse {
     display: none !important;
   }
@@ -44,15 +44,36 @@
 }
 
 @media (max-width: 1024px) {
-  .frame3,
-  .frame11 {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+  .nav1 {
+    font-size: 8px;
+  }
+
+  .search-btn + button {
+    font-size: 8px !important;
+    height: 30px;
+    padding: 8px 16px !important;
+  }
+  .search-btn {
+    width: 40px;
+    height: 40px;
   }
 
   #trusted {
-    font-size: 9px !important;
-    line-height: 14px !important;
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .frame3 {
+    font-size: 10px !important;
+  }
+  .frame11 {
+    font-size: 10px !important;
+  }
+  .frame9,
+  .frame8,
+  .frame7,
+  .frame10 {
+    gap: 14px !important;
   }
 
   .our-services h1 {
@@ -73,52 +94,76 @@
   .frame21 {
     width: 384px !important;
   }
-  .frame23 img{
-  width: 474px !important;
-}
- 
+  .frame23 img {
+    width: 474px !important;
+  }
 }
 
-
-@media (max-width: 991.98px) {
-  /* lg breakpoint */
+@media (max-width: 996px) {
   .frame26 .custom-row {
     flex-direction: column;
   }
-}
-
-
-
-@media (min-width: 200px) and (max-width: 1024px) {
-  .frame3 {
-    font-size: 10px !important;
+  .meet-our{
+    
+    font-size: 34px;
   }
-  .frame11 {
-    font-size: 10px !important;
+
+  .frame25 {
+    text-align: center;
   }
-  .frame9,
-  .frame8,
-  .frame7,
-  .frame10 {
-    gap: 14px !important;
+  .frame25 h2 {
+    font-size: 34px;
   }
-}
 
+  .frame26 button,
+  .frame26 span {
+    align-self: center;
+  }
 
-
-@media (min-width: 200px) and (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+  .custom-collapse {
+    display: none; /* hide desktop nav */
+  }
   .frame18 {
-    justify-content: space-between !important;
+    display: none; /* hide right buttons */
   }
+  .polycontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .banner-content {
     gap: 6px !important;
   }
-
-  .navbar-nav {
-    align-items: end;
-    margin-right: 0px !important;
-    justify-content: right;
+  .our-services {
+    align-items: center;
   }
+  .frame23 {
+    margin-right: 10px;
+  }
+  .links{
+    align-items: center;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 996px) {
+  
+  .card-col .card{
+    
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
   .navbar-collapse {
     display: flex;
     flex-direction: row-reverse !important;
@@ -129,57 +174,66 @@
 
     margin-top: 14px !important;
   }
-}
-
-@media (min-width: 768px) {
   .container,
   .container-md,
   .container-sm {
     max-width: 1360px;
   }
-  .frame41 {
+
+  
+
+  /* .frame41 {
     max-width: 100% !important;
+  } */
+
+
+
+ 
+}
+
+@media (max-width: 768px) {
+  #exp {
+    font-size: 9px;
   }
 
-  .imgDiv {
-    height: 544px;
+  .footer-logo{
+  justify-content: center;
+}
+
+   /* .imgDiv {
+    max-height: 544px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: cover; /* fill without distortion */
-    z-index: -1; /* push image behind */
+    object-fit: cover; 
+    z-index: -1; 
     overflow: hidden;
-  }
+  } */
 
-  .imgDiv img {
+  /* .imgDiv img {
     width: 100%;
     height: auto;
-  }
-}
+  } */
 
-
-
-@media (max-width: 768px) {
-  #exp {
-    font-size: 9px !important;
+  
+  .crousel-icon-cont {
+    height: 45px;
+    width: 45px;
   }
   .appointment-btn {
     height: 50px;
     margin-top: 5% !important;
   }
-  .accordion-button {
-    width: 500px !important;
+  /* .accordion-button {
+    width: 500px ;
   }
   .accordion-body {
-    width: 500px !important;
-  }
+    width: 100% ;
+  } */
 
-  .links{
+  .links {
     align-items: center !important;
-  }
-  .frame26 button,.frame26 span{
-    align-self: center;
   }
 }
 
@@ -191,30 +245,19 @@
     width: 26px !important;
     height: 26px !important;
   }
-}
-
-
-
-@media (max-width: 480px) {
   #trusted + h1 {
-    font-size: 20px !important;
+    font-size: 20px;
   }
   #trusted {
-    font-size: 6px !important;
-    line-height: 2px !important;
+    font-size: 6px;
+    line-height: 2px;
   }
-  .blueButton span{
-    font-size: 8px !important;
-  }
-  #exp {
-    font-size: 6px !important;
-  }
-  .banner-btns {
-    gap: 7px !important;
-  }
+
   .blueButton {
-    white-space: normal !important; /* allow text to wrap */
-    border-radius: 20px !important;
+    white-space: normal; /* allow text to wrap */
+    border-radius: 20px;
+
+    padding: 9px 14px;
   }
 
   .blueButton + button {
@@ -222,11 +265,17 @@
     white-space: normal !important; /* allow text to wrap */
     border-radius: 20px !important;
   }
-  .our-services {
-    align-items: center;
+  .banner2 h1{
+    font-size: 33px;
   }
 
-  
+  .blueButton span {
+    font-size: 8px !important;
+  }
+
+  .banner-btns {
+    gap: 7px !important;
+  }
 
   .blueButton + button span {
     padding: 12px 14px !important; /* reduce height */
@@ -234,11 +283,49 @@
     white-space: normal !important; /* allow text to wrap */
     border-radius: 20px !important;
   }
+  .crousel-icon-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+  }
+
+  #exp {
+    font-size: 6px;
+  }
+  #our-services-btn {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .badge{
+    font-size: 10px;
+    font-size: 10px;
+    margin-bottom: 20px;
+    padding: 0px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .frame25 h2 {
+    font-size: 23px;
+  }
+
+  .meet-our{
+    
+    font-size: 23px;
+  }
+
 
   .frame29 {
     --bs-gutter-x: 0rem !important;
   }
-
+  .specialist-header p{
+    font-size: 10px;
+  }
+  #trusted + h1 {
+    font-size: 15px;
+  }
   .row {
     --bs-gutter-x: 0rem !important;
   }
@@ -247,40 +334,42 @@
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
-  .blueButton{
-    padding: 9px 34px !important;
-  }
 
-  .frame23 img{
-  width: 297px !important;
-}
+  .frame23 img {
+    width: 297px !important;
+  }
 
   .accordion-button {
-    width: auto !important;
+    font-size: 10px;
   }
-  .accordion-body {
-    width: auto !important;
+  .accordion-body{
+    font-size: 8px;
   }
   .frame21 {
     width: 244px !important;
   }
-  .mb-md-0{
+  .mb-md-0 {
     margin-top: 16px;
   }
-  #socials{
-    margin-top: 16px ;
+  #socials {
+    margin-top: 16px;
   }
   .doctors-slider {
     padding: 50px 0px !important;
   }
 
-  #our-services-btn{
-    margin-bottom: 20px ;
-  }
   
+  #exp {
+    font-size: 4px;
+  }
+  .frame25 p,
+  .frame25 ul {
+    font-size: 10px;
+  }
+  .frame25 {
+    text-align: center;
+  }
 }
-
-
 
 @media (max-width: 376px) {
   .frame9,
@@ -289,9 +378,9 @@
   .frame10 {
     gap: 8px !important;
   }
-      .frame3 {
-        font-size: 7px !important;
-    }
+  .frame3 {
+    font-size: 7px !important;
+  }
 }
 
 @media (max-width: 321px) {

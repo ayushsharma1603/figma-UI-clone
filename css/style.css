@@ -15,6 +15,11 @@ html {
   font-size: 16px;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Urbanist", Arial, sans-serif;
   line-height: 1.5;
@@ -145,6 +150,7 @@ option {
   transition: transform 0.3s ease;
 }
 
+
 /* Rotate only the SVG when open */
 #arrow.is-open svg {
   transform: rotate(180deg);
@@ -153,37 +159,135 @@ option {
 .nav1 {
   font-family: "Urbanist";
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 26px;
   letter-spacing: 0%;
   vertical-align: middle;
   text-transform: uppercase;
   color: #000d44;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.nav1:hover {
+  -webkit-text-stroke: 0.6px #000d44;
 }
 #flag-icon img {
   border-radius: 50%;
   object-position: center;
   transform: scale(1.05);
 }
-
-.navbar-nav {
-  display: flex !important;
-  justify-content: space-between !important;
+#navbarSupportedContent{
+  justify-content: center;
+  z-index: 5;
+  background-color: white;
 }
 
-.navbar-expand-custom .navbar-nav {
+
+/* Reset */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Basic nav */
+.frame11 {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.navNew {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 120px;
+}
+.navbar-toggler {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+.custom-collapse .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.frame18 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Mobile overlay menu */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  right: -70%;
+  width: 70%;
+  height: 100%;
+  background: #fff;
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+  display: flex;
   flex-direction: column;
 }
-.navbar-nav .nav-link {
-  color: #000d44;
-  -webkit-text-stroke: 0 transparent; /* no stroke initially */
-  font-weight: 500;
+.nav-overlay.active {
+  right: 0;
+}
+.overlay-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.close-btn {
+  align-self: flex-end;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.mobile-menu a {
+  font-size: 20px;
+
 }
 
-.navbar-nav .nav-link:hover {
-  font-weight: 500; /* keep weight same */
-  -webkit-text-stroke: 0.6px #000d44; /* simulate bold without resize */
+.navbar-nav a{
+  
+    color: #000d44;
 }
+
+/* Backdrop */
+.overlay-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.overlay-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 
 .navbar {
   height: 100px;
@@ -203,7 +307,13 @@ option {
   justify-content: center;
 }
 
+.search-btn svg{
+  height: auto;
+  width: 40%;
+}
+
 .blueButton {
+  max-height: 56px;
   background: linear-gradient(180deg, #044bce 37.5%, #ddebff 100%);
   border-radius: 30px;
   color: white;
@@ -247,12 +357,6 @@ option {
   z-index: 1;
 }
 
-.frame18 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 26px;
-}
 
 .carousel1 {
   position: relative;
@@ -264,9 +368,9 @@ option {
 .carousel1 img {
   height: 100%;
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
   z-index: 1;
-  object-position: center;
+  object-position: bottom;
 }
 
 .carousel-overlay {
@@ -309,17 +413,24 @@ option {
 
 .carousel-control-prev > span,
 .carousel-control-next > span {
-  border: 1px solid white;
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 22px 26px;
-   
-  */
+}
+.crousel-icon-cont{
+    border: 1px solid white;
   height: 60px;
   width: 60px;
   border-radius: 50%;
 }
+.crousel-icon-cont span{
+  width: 100%;
+  height: auto;
+  z-index: 3;
+}
+
+
 
 #trusted {
   font-family: "Poppins";
@@ -369,12 +480,12 @@ option {
 }
 
 .sev-btn {
-  
   border: 1px solid white;
   border-radius: 30px;
   position: relative;
   transition: all 0.7s ease;
 }
+
 
 .sev-btn:hover {
   border: 1px solid rgba(200, 197, 197, 0.527);
@@ -418,6 +529,8 @@ option {
 
 .frame23 img {
   border-radius: 16px;
+  height: auto;
+  width: 100%;
 }
 
 .custom-row {
@@ -581,6 +694,7 @@ button:hover {
   margin-bottom: 25px;
 }
 
+
 .banner2 h1 {
   font-family: "Outfit";
   font-weight: 600;
@@ -616,17 +730,30 @@ button:hover {
 .banner-section {
   position: relative;
 }
-
-.banner-section img {
+.imgDiv{
+  max-height: 544px;
+  width: 100vw;
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* fill without distortion */
-  z-index: -1; /* push image behind */
+
+
 }
 
+.banner-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  z-index: -1; 
+}
+
+.banner2Img{
+  position: relative;
+  z-index: 2;
+  
+}
 .bg-info {
   height: 500px !important;
 }
@@ -730,6 +857,16 @@ form {
   color: #788094 !important;
 }
 
+.test-form{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 31px;
+
+}
+
 form input,
 form select {
   background-color: #f5f7fa !important;
@@ -769,8 +906,6 @@ form select option {
   font-family: "Poppins";
   font-weight: 500;
   font-style: Medium;
-  font-size: 18px;
-  line-height: 26px;
   letter-spacing: 0%;
   vertical-align: middle;
   text-transform: uppercase;
@@ -780,10 +915,7 @@ form select option {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 72px;
-  height: 34px;
   border-radius: 99px;
-  padding: 4px 18px;
 }
 
 .accrd {
@@ -797,7 +929,6 @@ form select option {
 
 .accordion-button {
   font-family: "DM Sans";
-  width: 100%;
   font-weight: 700;
   font-style: Bold;
   font-size: 20px;
@@ -806,7 +937,7 @@ form select option {
   vertical-align: middle;
   border: none !important;
 
-  width: 844px;
+  /* max-width: 844px; */
 
   padding: 25px;
 
@@ -817,13 +948,11 @@ form select option {
 .accordion-item,
 .accordion-button,
 .accordion-body {
-  border: none !important;
-  box-shadow: none !important;
+  border: none ;
+  box-shadow: none ;
+  
 }
 
-.accordion-button:not(.collapsed) {
-  box-shadow: none;
-}
 
 .accordion-button:focus {
   box-shadow: none !important;
@@ -837,15 +966,53 @@ form select option {
   color: #1b0c25;
 }
 
+/* Position the icon at the right */
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* span container */
+.accordion-button .icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Default: collapsed → show PLUS */
+.accordion-button.collapsed .icon {
+  background-image: url("data:image/svg+xml;utf8,<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='-2' y='7' width='20' height='2' rx='1' fill='%231B0C25'/><rect x='7' y='-2' width='2' height='20' rx='1' fill='%231B0C25'/></svg>");
+}
+
+/* Expanded: show CROSS */
+.accordion-button:not(.collapsed) .icon {
+  background-image: url("data:image/svg+xml;utf8,<svg width='23' height='24' viewBox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='3.90808' y='18.3638' width='20' height='2' rx='1' transform='rotate(-45 3.90808 18.3638)' fill='%231B0C25'/><rect x='3.90808' y='5.63623' width='2' height='20' rx='1' transform='rotate(-45 3.90808 5.63623)' fill='%231B0C25'/></svg>");
+}
+
+
 .accrd-wrapper {
   margin: 0 auto;
 }
 
-.accordion-body {
+.accrd-wrapper{
+  
   max-width: 844px;
+}
+
+/* .accordion-collapse, .collapse{
+  width: 100%;
+} */
+/* .accordion-header{
+  width: 100%;
+} */
+
+.accordion-body {
 
   color: #1b0c25;
-  width: 100%;
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 16px;
@@ -856,9 +1023,7 @@ form select option {
 
 #faq + h2 {
   font-family: "Urbanist";
-  font-weight: 700;
   font-style: Bold;
-  font-size: 48px;
   line-height: 100%;
   letter-spacing: 0%;
   vertical-align: middle;
@@ -867,12 +1032,11 @@ form select option {
 }
 
 .accordion {
-  margin-top: 56px;
-  margin-bottom: 56px;
+  margin-top: 12px;
+  margin-bottom: 28px;
 }
 
-.accordion-button:not(.collapsed){
-  
+.accordion-button:not(.collapsed) {
   color: #1b0c25;
   background-color: #f5f7fa;
 }
@@ -890,8 +1054,6 @@ form select option {
 .accordion-button::after {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 24px;
   margin-left: auto;
   background: url("assets/plus.svg") no-repeat center center;
   background-size: contain;
@@ -914,8 +1076,8 @@ form select option {
   align-items: center;
   justify-content: center;
   background-color: #032c94;
-  width: 175px;
-  height: 34px;
+  max-width: 175px;
+  max-height: 34px;
   /* gap: 10px; */
   border-radius: 99px;
   padding: 4px 18px;
@@ -1036,13 +1198,8 @@ form select option {
   background-color: #1f5fff !important;
 }
 
-#navbarSupportedContent {
-  z-index: 5;
-  background-color: white;
-}
-
 .frame26 {
-  margin: 120px 0px;
+  margin: 62px 0px;
 }
 
 .frame21 {
@@ -1116,14 +1273,10 @@ ul + .blueButton {
 }
 
 footer {
-  
-  font-family:'DM Sans';
-font-weight: 400;
-font-size: 16px;
-letter-spacing: 0%;
-
-
-
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0%;
 
   color: white;
   display: flex;
@@ -1134,111 +1287,155 @@ letter-spacing: 0%;
   padding-top: 48px;
   padding-bottom: 32px;
 }
-#socials div{
+#socials div {
   width: 40px;
-height: 40px;
-border-radius: 100px;
-
+  height: 40px;
+  border-radius: 100px;
 }
 
-#socials{
+#socials {
   display: flex;
   gap: 5px;
   justify-content: center;
 }
 
-.logo-bottom{
+.logo-bottom {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
 }
 
-.logo-bottom h3{
-  font-family: 'Urbanist';
-font-weight: 600;
-font-size: 24px;
-letter-spacing: -2%;
-
+.logo-bottom h3 {
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -2%;
 }
 
-.newsletter-formneeds-validation input{
+.newsletter-formneeds-validation input {
   padding: 0 !important;
   border: none;
   outline: none;
   background-color: transparent !important;
-  
+
   color: white !important;
 }
 
-.newsletter-formneeds-validation input::placeholder{
-  font-family: 'Urbanist';
-font-weight: 400;
-font-size: 20px;
-line-height: 140%;
-letter-spacing: -1%;
+.newsletter-formneeds-validation input::placeholder {
+  font-family: "Urbanist";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -1%;
 
   color: white !important;
-
 }
 .newsletter-formneeds-validation input:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 
-
-
-
-#inp-btn{
+#inp-btn {
   flex-direction: row !important;
   display: flex;
   justify-content: space-between !important;
   width: 100% !important;
-  border-bottom: 1px solid #FFFFFF1F
-
+  border-bottom: 1px solid #ffffff1f;
 }
-#inp-btn button{
+#inp-btn button {
   appearance: none;
   border: none;
 }
 
-
-.links{
+.links {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.links li{
-  font-family: 'DM Sans';
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0%;
-margin-top: 20px;
-
+.links li {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-top: 20px;
 }
-.firstLi{
+.firstLi {
   margin-top: 0;
 }
 
-.firstLi h6{
-font-family: "DM Sans";
-font-weight: 600;
-font-size: 20px;
-line-height: 140%;
-letter-spacing: -1%;
-
+.firstLi h6 {
+  font-family: "DM Sans";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -1%;
 }
 
 .form-select {
   color: #788094 !important;
-
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
   color: #788094;
 }
 
-body,html{
-  overflow-x: hidden;
+.navLogo{
+  width: 224px !important;
+  height: 53px !important;
+
 }
+
+.navLogo img{
+  width: 100% !important;
+  height: auto;
+}
+
+.mobile-menu li {
+  font-family: "Urbanist";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000d44;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+
+.frame8 img :hover {
+  cursor: pointer;
+}
+
+.testimonial-card{
+  max-width: 843px;
+}
+
+.formDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner2Img {
+  display: flex ;
+  align-items: center;
+  justify-content: space-between !important;
+}
+
+.meet-our{
+  font-family: 'Urbanist';
+font-weight: 700;
+font-style: Bold;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color: #000D44;
+
+}
+

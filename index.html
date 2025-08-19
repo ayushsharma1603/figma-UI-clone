@@ -15,8 +15,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header class="container-fluid">
@@ -94,94 +94,78 @@
           </div>
         </div>
       </div>
-      <nav class="frame11 navbar navbar-expand-lg">
-        <div
-          class="container-fluid navNew justify-content-between align-items-center"
-        >
+
+      <nav class="frame11">
+        <div class=" navNew">
           <!-- Logo -->
-          <a class="navbar-brand" href="index.html">
+          <div id="navLogo">
             <img src="assets/logo.svg" alt="Logo" />
-          </a>
-          <!-- Toggler button (visible on small screens) -->
+          </div>
+
+          <!-- Toggler button (small screens only) -->
           <button
             class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            id="menuToggler"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            ☰
           </button>
-          <!-- Navbar links (centered) -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <!-- <li class="nav-item dropdown">
-                        <a
-                          class="nav-link dropdown-toggle"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          About us +
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider" /></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </li>
-                        </ul>
-                        </li> -->
-              <li class="nav-item nav1">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item nav1">
-                <a class="nav-link" href="#">About us +</a>
-              </li>
-              <li class="nav-item nav1">
-                <a class="nav-link" href="#">Career</a>
-              </li>
-              <li class="nav-item nav1">
-                <a class="nav-link" href="#">Meet our physician</a>
-              </li>
-              <li class="nav-item nav1">
-                <a class="nav-link" href="#">Our Specialties</a>
-              </li>
-              <li class="nav-item nav1">
-                <a class="nav-link" href="#">WHAT TO EXPECT</a>
-              </li>
-              <li class="nav-item nav1">
-                <a class="nav-link" href="#">COVID-19</a>
-              </li>
+
+          <!-- Desktop Navbar -->
+          <div class="custom-collapse">
+            <ul class="navbar-nav nav-items">
+              <li><a class="nav1" href="#">Home</a></li>
+              <li><a class="nav1" href="#">About us +</a></li>
+              <li><a class="nav1" href="#">Career</a></li>
+              <li><a class="nav1" href="#">Meet our physician</a></li>
+              <li><a class="nav1" href="#">Our Specialties</a></li>
+              <li><a class="nav1" href="#">What to Expect</a></li>
+              <li><a class="nav1" href="#">COVID-19</a></li>
             </ul>
-            <!-- Search form (stays on right) -->
-            <div class="frame18">
-              <button class="search-btn">
-                <svg
-                  width="20"
-                  height="21"
-                  viewBox="0 0 20 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.6875 18.8984L14.4531 13.6641C15.599 12.2318 16.1849 10.5521 16.2109 8.625C16.1589 6.33333 15.3646 4.41927 13.8281 2.88281C12.2917 1.34635 10.3776 0.552084 8.08594 0.5C5.79427 0.552084 3.88021 1.34635 2.34375 2.88281C0.833333 4.41927 0.0520833 6.33333 0 8.625C0.0520833 10.9167 0.846354 12.8307 2.38281 14.3672C3.89323 15.9036 5.79427 16.6979 8.08594 16.75C10.0391 16.724 11.7188 16.138 13.125 14.9922L18.3594 20.2266C18.5938 20.4089 18.8281 20.5 19.0625 20.5C19.3229 20.5 19.5443 20.4089 19.7266 20.2266C20.0911 19.7839 20.0781 19.3411 19.6875 18.8984ZM1.875 8.625C1.92708 6.85417 2.53906 5.38281 3.71094 4.21094C4.88281 3.03906 6.35417 2.42708 8.125 2.375C9.89583 2.42708 11.3672 3.03906 12.5391 4.21094C13.7109 5.38281 14.3229 6.85417 14.375 8.625C14.3229 10.3958 13.7109 11.8672 12.5391 13.0391C11.3672 14.2109 9.89583 14.8229 8.125 14.875C6.35417 14.8229 4.88281 14.2109 3.71094 13.0391C2.53906 11.8672 1.92708 10.3958 1.875 8.625Z"
-                    fill="#000D44"
-                  />
-                </svg>
-              </button>
-              <button class="blueButton">
-                <div class="button-overlay"></div>
-                <span>make an appointment</span>
-              </button>
-            </div>
+          </div>
+
+          <!-- Desktop Right Buttons -->
+          <div class="frame18">
+            <button class="search-btn">
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.6875 18.8984L14.4531 13.6641C15.599 12.2318 16.1849 10.5521 16.2109 8.625C16.1589 6.33333 15.3646 4.41927 13.8281 2.88281C12.2917 1.34635 10.3776 0.552084 8.08594 0.5C5.79427 0.552084 3.88021 1.34635 2.34375 2.88281C0.833333 4.41927 0.0520833 6.33333 0 8.625C0.0520833 10.9167 0.846354 12.8307 2.38281 14.3672C3.89323 15.9036 5.79427 16.6979 8.08594 16.75C10.0391 16.724 11.7188 16.138 13.125 14.9922L18.3594 20.2266C18.5938 20.4089 18.8281 20.5 19.0625 20.5C19.3229 20.5 19.5443 20.4089 19.7266 20.2266C20.0911 19.7839 20.0781 19.3411 19.6875 18.8984ZM1.875 8.625C1.92708 6.85417 2.53906 5.38281 3.71094 4.21094C4.88281 3.03906 6.35417 2.42708 8.125 2.375C9.89583 2.42708 11.3672 3.03906 12.5391 4.21094C13.7109 5.38281 14.3229 6.85417 14.375 8.625C14.3229 10.3958 13.7109 11.8672 12.5391 13.0391C11.3672 14.2109 9.89583 14.8229 8.125 14.875C6.35417 14.8229 4.88281 14.2109 3.71094 13.0391C2.53906 11.8672 1.92708 10.3958 1.875 8.625Z"
+                  fill="#000D44"
+                />
+              </svg>
+            </button>
+            <button class="blueButton">
+              <div class="button-overlay"></div>
+              <span>Make an Appointment</span>
+            </button>
           </div>
         </div>
       </nav>
+
+      <!-- Mobile Overlay Menu -->
+      <div class="nav-overlay" id="navOverlay">
+        <div class="container-fluid overlay-container">
+          <button class="close-btn" id="closeOverlay">✕</button>
+          <ul class="navbar-nav mobile-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us +</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Meet our physician</a></li>
+            <li><a href="#">Our Specialties</a></li>
+            <li><a href="#">What to Expect</a></li>
+            <li><a href="#">COVID-19</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Backdrop -->
+      <div class="overlay-backdrop" id="overlayBackdrop"></div>
     </header>
     <div id="frame19" class="carousel slide">
       <!-- Indicators -->
@@ -206,14 +190,8 @@
       <!-- Slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="carousel1 ">
-            <img
-              src="assets/carousel.jpg"
-              class="d-block w-100 img-fluid
-                     img-fluid
-                     img-fluid"
-              alt="..."
-            />
+          <div class="carousel1">
+            <img src="assets/carousel.jpg" alt="..." />
           </div>
           <div class="banner-content carousel-overlay container-fluid">
             <p id="trusted">TRUSTED BY 100000+ PATIENTS</p>
@@ -312,7 +290,21 @@
         data-bs-target="#frame19"
         data-bs-slide="prev"
       >
-        <span><span class="carousel-control-prev-icon"></span></span>
+        <span class="crousel-icon-cont"
+          ><span
+            ><svg
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.21875 0.1875C7.05208 0.020833 6.875 0.020833 6.6875 0.1875L0.15625 6.75C-0.03125 6.91667 -0.03125 7.08333 0.15625 7.25L6.6875 13.8125C6.875 13.9792 7.05208 13.9792 7.21875 13.8125L7.84375 13.1875C8.03125 13.0208 8.03125 12.8438 7.84375 12.6562L2.1875 7L7.84375 1.34375C8.03125 1.15625 8.03125 0.979167 7.84375 0.8125L7.21875 0.1875Z"
+                fill="white"
+              />
+            </svg> </span
+        ></span>
       </button>
       <button
         class="carousel-control-next"
@@ -320,7 +312,21 @@
         data-bs-target="#frame19"
         data-bs-slide="next"
       >
-        <span><span class="carousel-control-next-icon"></span></span>
+        <span class="crousel-icon-cont"
+          ><span
+            ><svg
+              width="8"
+              height="16"
+              viewBox="0 0 8 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.78125 1.1875C0.947917 1.02083 1.125 1.02083 1.3125 1.1875L7.84375 7.75C8.03125 7.91667 8.03125 8.08333 7.84375 8.25L1.3125 14.8125C1.125 14.9792 0.947917 14.9792 0.78125 14.8125L0.15625 14.1875C-0.03125 14.0208 -0.03125 13.8438 0.15625 13.6562L5.8125 8L0.15625 2.34375C-0.03125 2.15625 -0.03125 1.97917 0.15625 1.8125L0.78125 1.1875Z"
+                fill="white"
+              />
+            </svg> </span
+        ></span>
       </button>
     </div>
     <section class="container-fluid frame26">
@@ -367,17 +373,17 @@
 
     <section class="container-fluid mt-4">
       <div class="container">
-        <div class="row frame29 align-items-end mt-5 gutter-48">
+        <div class="row frame29 mt-3 gutter-48">
           <!-- Left Column -->
           <div
-            class="our-services col-lg-4 col-md-6 col-12 text-center text-md-start"
+            class="our-services col-lg-4 col-12 text-center text-md-start"
           >
             <button id="our-services-btn">OUR SERVICES</button>
             <h1>Our Specialties & Procedures</h1>
           </div>
           <!-- Middle Column -->
           <div
-            class="col-lg-4 col-md-6 col-12 d-flex justify-content-center justify-content-lg-center"
+            class="col-lg-4 col-12 d-flex justify-content-center justify-content-lg-center"
           >
             <p class="text-center text-lg-start">
               We provide a wide range of outpatient surgical procedures across
@@ -396,7 +402,7 @@
           </div>
         </div>
         <div class=" cards row gy-5 mb-5">
-          <div class=" col-12 col-md-6 col-lg-4">
+          <div class="  card-col col-12 col-lg-4">
             <div class="card p-4">
               <div id="cardImg">
                 <img
@@ -419,7 +425,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class= " card-col col-12 col-lg-4">
             <div class="card p-4">
               <div id="cardImg">
                 <img
@@ -442,7 +448,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class= " card-col col-12 col-lg-4">
             <div class="card p-4">
               <div id="cardImg">
                 <img
@@ -467,8 +473,8 @@
           </div>
         </div>
         <div class="row gy-5 mb-5">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card p-4">
+          <div class= " card-col col-12 col-lg-4">
+            <div class="card card-col p-4">
               <div id="cardImg">
                 <img
                   src="assets/cardImg/card4 (2).jpg"
@@ -490,8 +496,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card p-4">
+          <div class= " card-col col-12 col-lg-4">
+            <div class="card card-col p-4">
               <div id="cardImg">
                 <img
                   src="assets/cardImg/card5.jpg"
@@ -501,7 +507,7 @@
                 <p>Dr. Jordan Dufren</p>
               </div>
               <div class="card-body pt-3">
-                <h5 class="card-title">Pain Medicine & Pain Management</h5>
+                <h5 class="card-title">Pain Medicine & Pain <br> Management</h5>
                 <p class="card-text">
                   Personalized solutions to help manage and relieve chronic or
                   post-operative pain.
@@ -513,7 +519,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class= " card-col col-12 col-lg-4">
             <div class="card p-4">
               <div id="cardImg">
                 <img
@@ -541,12 +547,12 @@
     </section>
     <section class="container-fluid banner-section">
       <div class="imgDiv">
-        <img src="assets/banner2.jpg " height="544px" alt="img" />
+        <img src="assets/banner2.jpg " alt="img" />
       </div>
-      <div class="container pt-5">
+      <div class="container test-form">
         <!-- Row 1: 4 columns -->
-        <div class="banner2Img text-center text-lg-start row mt-5">
-          <div class="col-6 col-lg-3">
+        <div class="banner2Img text-center text-lg-start row ">
+          <div class="col-3 col-lg-3">
             <div class="p-3">
               <div class="banner2 ">
                 <h1>45k</h1>
@@ -558,37 +564,37 @@
           <div class="col-6 col-lg-3">
             <div class="p-3">
               <div class="banner2 ">
-                <h1>45k</h1>
+                <h1>306</h1>
                 <span>+</span>
               </div>
-              <p>Satisfied patients</p>
+              <p>Professional Doctors</p>
             </div>
           </div>
           <div class="col-6 col-lg-3">
             <div class="p-3 ">
               <div class="banner2 ">
-                <h1>45k</h1>
+                <h1>10k<h1>
                 <span>+</span>
               </div>
-              <p>Satisfied patients</p>
+              <p>Operations Successful</p>
             </div>
           </div>
           <div class="col-6 col-lg-3">
             <div class="p-3 ">
               <div class="banner2 ">
-                <h1>45k</h1>
+                <h1>320</h1>
                 <span>+</span>
               </div>
-              <p>Satisfied patients</p>
+              <p>National Awards Win</p>
             </div>
           </div>
         </div>
         <!-- Row 2: Carousel + Form -->
-        <div class="row g-4">
+        <div class="row g-4 ">
           <!-- Testimonials Carousel -->
           <div class="col-lg-6 col-12">
             <div
-              class="card shadow-lg border-0 h-100 rounded-4 p-4 text-center"
+              class="card testimonial-card shadow-lg border-0 h-100 rounded-4 p-4 text-center"
             >
               <h3 class="fw-bold mb-4">Testimonials</h3>
 
@@ -873,7 +879,7 @@
       <!-- Section Heading -->
       <div class="text-center specialist-header mb-4">
         <span class="badge">OUR SPECIALIST</span>
-        <h2 class="fw-bold meet mt-3">Meet Our Specialists</h2>
+        <h2 class="meet-our mt-3">Meet Our Specialists</h2>
         <p>
           Our team of dedicated and highly skilled doctors is at the heart of
           our commitment to providing exceptional medical care. Each member of
@@ -1092,18 +1098,18 @@
           <div class="col-12 accrd-wrapper">
             <div class="w-100 accrd">
               <!-- FAQ Badge -->
-              <div id="faq" class="text-center  mb-3">
-                <span class="rounded-pill  px-3 py-2">FAQ</span>
+              <div id="faq" class="text-center badge  mb-3">
+                <span >FAQ</span>
               </div>
 
-              <h2 class="text-center fw-bold mb-4">
+              <h2 class="text-center meet-our">
                 Frequently Asked Questions
               </h2>
 
               <!-- Accordion -->
               <div class="accordion" id="faqAccordion">
                 <!-- Item 1 -->
-                <div class="accordion-item mb-2 rounded-3 overflow-hidden">
+                <div class="accordion-item mb-2 rounded-3 ">
                   <h2 class="accordion-header" id="headingOne">
                     <button
                       class="accordion-button collapsed"
@@ -1115,6 +1121,8 @@
                     >
                       How long will I be in the center after my procedure
                       (recovery period)?
+
+                      <span height="16px" width="16px" class="icon"></span>
                     </button>
                   </h2>
                   <div
@@ -1124,7 +1132,7 @@
                     data-bs-parent="#faqAccordion"
                   >
                     <div class="accordion-body">
-                      Recovery time varies depending on your procedure and
+                      Recovery time varies dedivending on your procedure and
                       individual needs. Our team will provide guidance before
                       discharge.
                     </div>
@@ -1143,7 +1151,11 @@
                       aria-controls="collapseTwo"
                     >
                       May my family accompany me?
+                      <span height="16px" width="16px" class="icon"></span>
                     </button>
+
+                    
+
                   </h2>
                   <div
                     id="collapseTwo"
@@ -1171,7 +1183,10 @@
                       aria-controls="collapseThree"
                     >
                       What happens behind the scenes of my procedure?
+                      <span height="16px" width="16px" class="icon"></span>
                     </button>
+
+
                   </h2>
                   <div
                     id="collapseThree"
@@ -1199,6 +1214,9 @@
                     >
                       Who should I call if I have questions before or after my
                       surgery?
+
+                      <span height="16px" width="16px" class="icon"></span>
+
                     </button>
                   </h2>
                   <div
@@ -1227,6 +1245,9 @@
                     >
                       Why do I have to come to the center 1 hour before my
                       procedure?
+
+                      <span height="16px" width="16px" class="icon"></span>
+
                     </button>
                   </h2>
                   <div
@@ -1292,10 +1313,9 @@
           </div>
 
           <!-- Links Columns -->
-          <div class="col-lg-2 links col-6 mb-4">
-            
+          <div class="col-lg-2 links col-md-3 col-6 mb-4">
             <ul class="list-unstyled">
-              <li >
+              <li>
                 <h6 class="fw-bold">Information</h6>
               </li>
               <li>
@@ -1320,8 +1340,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-2 links col-6 mb-4">
-            
+          <div class="col-lg-2 links col-md-3 col-6 mb-4">
             <ul class="list-unstyled">
               <li><h6 class="fw-bold">Company</h6></li>
               <li>
@@ -1342,10 +1361,9 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-2 links col-6 mb-4">
-           
+          <div class="col-lg-2 links col-md-3 col-6 mb-4">
             <ul class="list-unstyled">
-              <li> <h6 class="fw-bold">Help Center</h6></li>
+              <li><h6 class="fw-bold">Help Center</h6></li>
               <li>
                 <a href="#" class="text-white text-decoration-none">FAQs</a>
               </li>
@@ -1364,10 +1382,11 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-2 links col-6 mb-4">
+          <div class="col-lg-2 links col-md-3 col-6 mb-4">
             <ul class="list-unstyled">
-              <li >
-            <h6 class="fw-bold">Resources</h6></li>
+              <li>
+                <h6 class="fw-bold">Resources</h6>
+              </li>
               <li>
                 <a href="#" class="text-white text-decoration-none"
                   >Privacy Policy</a
@@ -1488,5 +1507,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/nav.js"></script>
   </body>
 </html>
