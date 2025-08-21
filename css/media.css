@@ -32,6 +32,9 @@
   .navNew {
     padding: 12px 0px;
   }
+  .frame29 {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1041px) {
@@ -41,11 +44,37 @@
   .navbar-expand-custom .navbar-toggler {
     display: block !important;
   }
+  .banner2Img .col-6 {
+    padding: 0 !important;
+    margin: 0;
+    box-sizing: content-box;
+  }
+}
+
+@media (max-width: 1165px) {
+  .carousel-control-prev .crousel-icon-cont {
+    left: 40px;
+  }
+  .carousel-control-next .crousel-icon-cont {
+    right: 40px;
+  }
 }
 
 @media (max-width: 1024px) {
   .nav1 {
     font-size: 8px;
+  }
+  .privacy-p a {
+    font-size: 11px !important;
+  }
+
+  .privacy-p + div {
+    font-size: 11px !important;
+  }
+
+  .socials div {
+    width: 20px;
+    height: 20px;
   }
 
   .search-btn + button {
@@ -73,7 +102,7 @@
   .frame8,
   .frame7,
   .frame10 {
-    gap: 14px !important;
+    gap: 14px;
   }
 
   .our-services h1 {
@@ -94,8 +123,14 @@
   .frame21 {
     width: 384px !important;
   }
-  .frame23 img {
-    width: 474px !important;
+  .carousel1 {
+    height: 464px;
+  }
+}
+
+@media (min-width: 996px) {
+  .frame41 {
+    width: 490px;
   }
 }
 
@@ -103,13 +138,24 @@
   .frame26 .custom-row {
     flex-direction: column;
   }
-  .meet-our{
-    
+  .formDiv {
+    justify-content: center;
+  }
+  .frame26 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .meet-our {
     font-size: 34px;
   }
 
   .frame25 {
     text-align: center;
+
+    margin-top: 60px;
+  }
+  .frame23 {
+    width: 60%;
   }
   .frame25 h2 {
     font-size: 34px;
@@ -140,25 +186,30 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .banner-content {
     gap: 6px !important;
   }
   .our-services {
     align-items: center;
   }
-  .frame23 {
+  /* .frame23 {
     margin-right: 10px;
+  } */
+  .links {
+    align-items: center;
   }
-  .links{
+  .frame29 {
+    gap: 20px;
+  }
+  #lastText {
+    justify-content: center;
     align-items: center;
   }
 }
 
 @media (min-width: 650px) and (max-width: 996px) {
-  
-  .card-col .card{
-    
+  .card-col .card {
     width: 80%;
   }
 }
@@ -174,33 +225,27 @@
 
     margin-top: 14px !important;
   }
+  .banner2 + p {
+    white-space: nowrap;
+  }
   .container,
   .container-md,
   .container-sm {
     max-width: 1360px;
+    padding: 0px 84px;
   }
-
-  
-
-  /* .frame41 {
-    max-width: 100% !important;
-  } */
-
-
-
- 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   #exp {
     font-size: 9px;
   }
 
-  .footer-logo{
-  justify-content: center;
-}
+  .footer-logo {
+    justify-content: center;
+  }
 
-   /* .imgDiv {
+  /* .imgDiv {
     max-height: 544px;
     width: 100%;
     position: absolute;
@@ -215,8 +260,13 @@
     width: 100%;
     height: auto;
   } */
+  .carousel-control-prev .crousel-icon-cont {
+    left: 36px;
+  }
+  .carousel-control-next .crousel-icon-cont {
+    right: 36px;
+  }
 
-  
   .crousel-icon-cont {
     height: 45px;
     width: 45px;
@@ -235,12 +285,12 @@
   .links {
     align-items: center !important;
   }
+  .frame8 {
+    display: none;
+  }
 }
 
 @media (max-width: 661px) {
-  .frame8 {
-    display: none !important;
-  }
   .border {
     width: 26px !important;
     height: 26px !important;
@@ -251,6 +301,13 @@
   #trusted {
     font-size: 6px;
     line-height: 2px;
+  }
+
+  .border + span {
+    padding: 0px 2px;
+  }
+  .frame7 {
+    gap: 4px;
   }
 
   .blueButton {
@@ -265,7 +322,7 @@
     white-space: normal !important; /* allow text to wrap */
     border-radius: 20px !important;
   }
-  .banner2 h1{
+  .banner2 h1 {
     font-size: 33px;
   }
 
@@ -291,6 +348,17 @@
     width: 30px;
   }
 
+  .carousel1 {
+    height: 300px;
+  }
+
+  .border + span {
+    padding: 0px;
+    font-size: 9px;
+  }
+  select {
+    font-size: 9px;
+  }
   #exp {
     font-size: 6px;
   }
@@ -298,7 +366,7 @@
     font-size: 10px;
     margin-bottom: 20px;
   }
-  .badge{
+  .badge {
     font-size: 10px;
     font-size: 10px;
     margin-bottom: 20px;
@@ -311,20 +379,24 @@
     font-size: 23px;
   }
 
-  .meet-our{
-    
+  .meet-our {
     font-size: 23px;
   }
-
 
   .frame29 {
     --bs-gutter-x: 0rem !important;
   }
-  .specialist-header p{
+  .specialist-header p {
     font-size: 10px;
   }
   #trusted + h1 {
     font-size: 15px;
+  }
+  .carousel-control-prev .crousel-icon-cont {
+    left: 15px;
+  }
+  .carousel-control-next .crousel-icon-cont {
+    right: 15px;
   }
   .row {
     --bs-gutter-x: 0rem !important;
@@ -334,15 +406,30 @@
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
-
-  .frame23 img {
-    width: 297px !important;
+  .border + span {
+    font-size: 7px;
   }
+  select {
+    font-size: 7px;
+  }
+  .frame10,
+  .frame7 {
+    gap: 4px !important;
+  }
+
+  .border {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  /* .frame23 img {
+    width: 297px !important;
+  } */
 
   .accordion-button {
     font-size: 10px;
   }
-  .accordion-body{
+  .accordion-body {
     font-size: 8px;
   }
   .frame21 {
@@ -354,11 +441,14 @@
   #socials {
     margin-top: 16px;
   }
-  .doctors-slider {
+  /* .doctors-slider {
     padding: 50px 0px !important;
+  } */
+
+  .carousel1 {
+    height: 230px;
   }
 
-  
   #exp {
     font-size: 4px;
   }
@@ -376,10 +466,22 @@
   .frame8,
   .frame7,
   .frame10 {
-    gap: 8px !important;
+    gap: 3px !important;
   }
   .frame3 {
     font-size: 7px !important;
+  }
+
+  #flag-icon {
+    height: 17px;
+    width: 17px;
+  }
+  #country {
+    width: 40px;
+  }
+  #arrow svg {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -391,17 +493,23 @@
   .container-sm,
   .container-xl,
   .container-xxl {
-    --bs-gutter-x: 0; /* removes gutter-x */
-    padding-left: 0;
-    padding-right: 0;
+    --bs-gutter-x: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .navbar-brand img {
     width: 50%;
     height: 50%;
   }
+  .border + span {
+    font-size: 6px;
+  }
+  .banner2 + p {
+    white-space: normal;
+  }
   .frame11 {
-    flex-direction: row !important;
+    flex-direction: row;
   }
   .navNew {
     justify-content: space-between;
