@@ -42,3 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
     closeDropdown();
   });
 });
+
+const navLinks = document.querySelectorAll(".nav1");
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.forEach(l => l.classList.remove("active1"));
+    link.classList.add("active1");
+  });
+});

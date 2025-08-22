@@ -17,3 +17,22 @@ overlayBackdrop.addEventListener("click", () => {
   navOverlay.classList.remove("active");
   overlayBackdrop.classList.remove("active");
 });
+
+
+
+// const searchBtn = document.querySelector(".search-btn");
+//   const searchBox = document.getElementById("searchBox");
+
+//   // Toggle search box on button click
+//   searchBtn.addEventListener("click", (e) => {
+//     e.stopPropagation(); // prevent closing immediately
+//     searchBox.style.display =
+//       searchBox.style.display === "block" ? "none" : "block";
+//   });
+
+//   // Hide search box on outside click
+//   document.addEventListener("click", (e) => {
+//     if (!searchBox.contains(e.target) && !searchBtn.contains(e.target)) {
+//       searchBox.style.display = "none";
+//     }
+//   });

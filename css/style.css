@@ -36,6 +36,31 @@ body {
 
   background-color: #032c94;
 }
+
+footer svg,
+.privacy-p a,
+.frame8 a,
+footer a {
+  transition: all 0.5s ease;
+}
+.privacy-p a {
+  opacity: 0.8;
+}
+.privacy-p a:hover {
+  -webkit-text-stroke: 0.2px white;
+  opacity: 1;
+}
+
+.frame8 img:hover {
+  transform: scale(1.06);
+}
+footer a:hover {
+  opacity: 1;
+}
+
+footer svg:hover {
+  transform: scale(1.1);
+}
 header {
   padding: 0 !important;
   margin: 0 !important;
@@ -49,14 +74,39 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 10px;
 }
 
 .border img {
-  padding: 0.5px 0.5px;
-  width: 60%;
+  width: 100%;
   height: auto;
 }
-#trusted + h1{
+
+.border + span {
+  font-family: "Urbanist";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#flag-icon {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+#flag-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+#trusted + h1 {
   padding: 0;
   margin: 0;
 }
@@ -88,20 +138,17 @@ header {
   justify-content: space-between;
 }
 
-#flag-icon {
-  height: 24px;
-  width: 24px;
-}
-
 #flag-icon img {
   height: 100%;
   width: 100%;
 }
 
 .frame9,
-.frame8,
 .frame7 {
   gap: 21px;
+}
+.frame8 {
+  gap: 17px;
 }
 
 select {
@@ -120,6 +167,9 @@ option {
 }
 
 .frame7 {
+  height: 26px;
+  opacity: 1;
+
   gap: 5px;
 }
 #country {
@@ -129,19 +179,20 @@ option {
 }
 
 #country-dropdown {
-  appearance: none; /* hide default arrow */
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   background: transparent;
   border: none;
-  padding-right: 25px;
+  /* padding-right: 25px; */
   color: white;
+  /* color: black; */
+
+  font-weight: 400;
 }
 
 #arrow {
-  position: absolute;
-  right: 5px;
-  pointer-events: none; /* ensures only select is clickable */
+  pointer-events: none;
 }
 
 #arrow svg {
@@ -154,29 +205,49 @@ option {
   transform: rotate(180deg);
 }
 
+.frame8 > span {
+  font-family: "Urbanist";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+
+.frame8 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav1 {
   font-family: "Urbanist";
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 26px;
   letter-spacing: 0%;
   vertical-align: middle;
   text-transform: uppercase;
   color: #000d44;
-  transition: all 0.5s ease;
+  -webkit-text-stroke: 0px #000d44;
+  transition: opacity 0.4s ease, -webkit-text-stroke 0.4s ease;
   text-decoration: none;
-  opacity: 0.56;
+  opacity: 0.7;
+}
+.nav1:active,
+.nav1:focus {
+  outline: none;
+  cursor: pointer;
 }
 
 .nav1:hover {
   opacity: 1;
   -webkit-text-stroke: 0.6px #000d44;
 }
-#flag-icon img {
-  border-radius: 50%;
-  object-position: center;
-  transform: scale(1.05);
+.active1 {
+  opacity: 1;
+  -webkit-text-stroke: 0.6px #000d44;
 }
+
 #navbarSupportedContent {
   justify-content: center;
   z-index: 5;
@@ -189,10 +260,20 @@ option {
 }
 
 .frame29 {
+  display: flex;
+  flex-direction: row;
   align-items: flex-end;
+  justify-content: space-between;
 }
 .frame29 p {
   max-width: 433px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #4c597a;
+  vertical-align: middle;
+  margin-bottom: 0;
 }
 .col-lg-4 p {
   font-size: 16px !important;
@@ -357,13 +438,20 @@ a {
   transition: all 0.7s ease;
 }
 
+.blueButton span {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+}
+
 .blueButton:hover {
   box-shadow: 0px 3px 15px 0px #aebdd3b2;
 }
 
 .button-overlay {
   height: 50%;
-  width: 86%;
+  width: 85%;
   position: absolute;
   top: 1px;
   left: 50%;
@@ -400,7 +488,7 @@ a {
   width: 100%;
   object-fit: cover;
   z-index: 1;
-  object-position: center bottom;
+  object-position: 0% 63%;
 }
 
 .carousel-overlay {
@@ -468,8 +556,7 @@ a {
 
 #trusted {
   font-family: "Poppins";
-  font-weight: 500;
-  font-style: Medium;
+  font-weight: 500 !important;
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0%;
@@ -507,6 +594,7 @@ a {
   vertical-align: middle;
   text-transform: capitalize;
   color: white;
+  margin-top: 15px;
 }
 
 .blueButton:hover {
@@ -584,11 +672,12 @@ a {
 #our-services-btn + h1 {
   font-family: "Urbanist";
   font-weight: 700;
-  max-width: 624px;
+  /* max-width: 624px; */
   font-style: Bold;
+  display: inline-block;
   color: #000d44;
   margin-bottom: 0;
-  font-size: 48px;
+  font-size: 47px;
   line-height: 100%;
   letter-spacing: 0%;
   vertical-align: middle;
@@ -622,8 +711,8 @@ a {
 .our-services {
   display: flex;
   flex-direction: column;
-  max-width: 624px;
-  gap: 10px;
+  /* max-width: 624px; */
+  gap: 17px;
 }
 .frame29 .col-lg-4 {
   box-sizing: content-box !important;
@@ -658,7 +747,7 @@ footer .form-control::placeholder {
 
 .card-body {
   padding: 0 !important;
-  padding-top: 1rem !important;
+  /* padding-top: 1rem !important; */
 }
 
 .card-body h5 {
@@ -681,6 +770,14 @@ footer .form-control::placeholder {
 }
 .card {
   box-shadow: 0px 0px 10.6px 0px #61616126;
+
+  max-width: 419px;
+  height: auto;
+  gap: 16px;
+  border-radius: 16px;
+  padding: 16px;
+  border: none;
+
 }
 button {
   transition: all 0.5s ease;
@@ -719,6 +816,16 @@ button:hover {
 
 #cardImg {
   position: relative;
+  width: 387px;
+  height: 248px;
+  overflow: hidden;
+}
+
+#cardImg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: left;
 }
 
 #cardImg p {
@@ -726,7 +833,7 @@ button:hover {
   background-color: #b61b42;
   color: white;
   left: 0;
-  top: 74%;
+  top: 80%;
   padding: 8px 10px;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -824,11 +931,6 @@ button:hover {
   z-index: -1;
 }
 
-.banner2Img {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-}
 .bg-info {
   height: 500px !important;
 }
@@ -925,12 +1027,9 @@ form {
   color: #788094 !important;
 }
 
-.test-form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 31px;
+
+.test-form2 {
+  margin-top: 80px;
 }
 
 form input,
@@ -961,7 +1060,8 @@ form select option {
 
   color: white !important;
 
-  margin-top: 10%;
+  margin-top: 7%;
+  margin-bottom: 40px;
 }
 
 .appointment-btn .button-overlay {
@@ -1016,7 +1116,19 @@ form select option {
 .accordion-body {
   border: none;
   box-shadow: none;
+  
 }
+
+.accordion-item{
+  margin-bottom: 12px;
+
+}
+.accordion-button,
+.accordion-body{
+  padding: 20px !important;
+}
+
+
 
 .accordion-button:focus {
   box-shadow: none !important;
@@ -1087,6 +1199,7 @@ form select option {
   vertical-align: middle;
   text-transform: capitalize;
   color: #000d44;
+  margin-bottom: 36px !important;
 }
 
 .accordion {
@@ -1096,8 +1209,25 @@ form select option {
 .accordion-button:not(.collapsed) {
   color: #1b0c25;
   background-color: #f5f7fa;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
+.accordion-button {
+  flex: 0 0 auto;
+  width: 844px;
+  white-space: normal;
+  text-align: left;
+  border-bottom: none !important;
+}
+.accordion-body {
+  width: 844px;
+  word-wrap: break-word;
+}
+
+.faqAccordion {
+  width: 844px;
+}
 .accordion-button::after {
   background-image: none !important;
   content: ""; /* remove default arrow */
@@ -1182,6 +1312,8 @@ form select option {
   text-align: center;
   vertical-align: middle;
   color: #4c597a;
+  margin: 0 !important;
+  margin-bottom: 35px !important;
 }
 
 .doctorimg {
@@ -1211,12 +1343,12 @@ form select option {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 17px;
+  /* gap: 17px; */
 }
 
 .carousel-indicators [data-bs-target] {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   background-color: #032c94;
   border-radius: 50%;
   border: none;
@@ -1229,11 +1361,13 @@ form select option {
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
+
+
 }
 
 .carousel-indicators {
   margin-top: 10px;
-  position: static !important;
+  /* position: static !important; */
 }
 
 .carousel-indicators {
@@ -1276,24 +1410,29 @@ form select option {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
+  gap: 17px;
 }
 
 .badge {
   background-color: #032c94 !important;
 }
 .about-us {
-  max-width: 103px;
-  max-height: 31px;
-  font-size: 14px;
+  width: 125px;
+  height: 34px;
+  border-radius: 99px;
+  padding-top: 4px;
+  padding-right: 18px;
+  padding-bottom: 4px;
+  padding-left: 18px;
+  font-size: 18px;
 }
 
 .frame25 h2,
 .frame25 p,
 .frame25 ul,
 .frame25 h6 {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .frame25 h2 {
@@ -1313,11 +1452,15 @@ form select option {
   color: #4c597a;
   font-family: "DM Sans";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
-  letter-spacing: 0%;
+  font-size: 16px;
+  line-height: 28px;
   vertical-align: middle;
 }
+.frame29 {
+  margin-top: 71px;
+}
+
+
 
 .frame25 h6 {
   font-family: "Urbanist";
@@ -1331,9 +1474,20 @@ form select option {
 }
 
 .jessica {
+  margin: 0 !important;
   font-weight: 700;
   font-family: "Urbanist";
   color: #111032;
+  margin-bottom: 10px !important;
+  margin-top: 17px !important;
+}
+
+#faq
+
+.doctorimg + div{
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
 }
 
 .post {
@@ -1385,6 +1539,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 429px;
 }
 
 .logo-bottom h3 {
@@ -1392,6 +1547,7 @@ footer {
   font-weight: 600;
   font-size: 24px;
   letter-spacing: -2%;
+  margin: 0 !important;
 }
 
 .newsletter-formneeds-validation input {
@@ -1422,7 +1578,8 @@ footer {
   display: flex;
   justify-content: space-between !important;
   width: 100% !important;
-  border-bottom: 1px solid #ffffff1f;
+  border-radius: 0px !important;
+  border-bottom: 1px solid #FFFFFF1F !important;
 }
 #inp-btn button {
   appearance: none;
@@ -1464,8 +1621,8 @@ footer {
 }
 
 #navLogo {
-  width: 224px !important;
-  height: 53px !important;
+  width: 224px;
+  height: 53px;
 }
 
 #navLogo img {
@@ -1491,30 +1648,132 @@ footer {
 }
 
 .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 31px;
   max-width: 843px;
+  margin-right: 27px;
 }
 
+.testimonial-card h3,.frame41 h3{
+  color: #000D44;
+}
+
+.testimonial-card h3{
+  font-family: 'Urbanist';
+font-weight: 700;
+font-size: 34px;
+line-height: 100%;
+text-align: center;
+vertical-align: middle;
+text-transform: capitalize;
+margin-top: 14px;
+
+}
+.doctorP + p{
+  max-width: 719px;
+}
+
+
+/* .btn-cont img {
+  height: auto;
+  width: 17.5px;
+  position: absolute;
+  top: 50%;
+} */
+.btn-cont button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* position: relative; */
+}
+
+.stars{
+  width: 100%;
+  /* height: 16px; */
+}
+
+.stars img{
+  width: 106px;
+  height: auto;
+  object-fit: contain;
+}
+.doctorP{
+  color: #788094;
+
+}
+.doctorP + p{
+  margin: 0;
+}
+.btn-cont{
+  margin-top: 31px;
+}
+.testimonial-card{
+  box-shadow: 0px 0px 10.6px 0px #61616126 ;
+
+}
 .formDiv {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 0;
 }
+.formdiv .card{
+  width: 490px;
+}
+.frame41{
+  padding: 0px 31px !important;
+  width: 490px !important;
+}
+form > div{
+  margin: 24px 0px !important;
+  border-radius: 27px !important;
+  border: none !important;
+}
+form input , form select{
+  border: none !important;
+  border-radius: 27px !important;
+}
 
-.formDiv .card {
-  width: 100%;
+
+.frame41 h3{
+  font-family: 'Urbanist';
+font-weight: 700;
+font-style: Bold;
+font-size: 34px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: capitalize;
+color: #000D44;
+margin-top: 39px;
+
+
 }
 .banner2Img {
   display: flex;
   align-items: center;
   justify-content: space-between !important;
-  margin-top: 81px;
+  
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.banner2Img .col-6{
+  margin-top: 81px !important;
 }
 
 .meet-our {
   font-family: "Urbanist";
   font-weight: 700;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-top: 17px;
   font-style: Bold;
+  margin-bottom: 24px;
   font-size: 48px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -1525,6 +1784,10 @@ footer {
 
 #frame19 {
   max-height: 740px;
+}
+
+.footer-ul h6{
+font-size: 20px !important;
 }
 
 .footer-ul a {
@@ -1541,6 +1804,7 @@ footer {
   font-weight: 400;
   font-size: 16px !important;
   line-height: 150%;
+  opacity: 1 !important;
 }
 
 #lastText {
@@ -1549,7 +1813,7 @@ footer {
   justify-content: flex-start;
   align-items: flex-end;
 }
-#lastText2 {
+.lastText2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1560,4 +1824,76 @@ footer {
 #lastText p {
   display: inline-block;
   box-sizing: content-box;
+}
+
+.frame18 .blueButton {
+  width: 197px;
+  height: 56px;
+  border-radius: 30px;
+  margin: 14px 0px;
+}
+
+.c1,.c2,.c3{
+  display: flex;
+  padding: 0;
+}
+
+.c2{
+  justify-content: center;
+}
+
+.c3{
+  justify-content: flex-end;
+}
+
+.c2 .card{
+  margin: 0px 12px;
+}
+
+footer form{
+  margin-top: 0px !important;
+}
+
+/* 
+
+
+.search-box {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  right: 60px;
+  background: white;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 200px;
+  font-size: 14px;
+} */
+
+.up{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mailDiv img{
+  width: 224px;
+height: 53px;
+
+}
+
+.mailDiv{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  text-align: start;
+
+  max-width: 429px;
 }
