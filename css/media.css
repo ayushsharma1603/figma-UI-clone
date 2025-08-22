@@ -9,7 +9,7 @@
     font-size: 41px;
   }
   #exp {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .banner-btns span {
@@ -267,6 +267,9 @@
   .testimonial-card{
     margin-right: 0;
   }
+  #exp{
+    width: 400px;
+  }
 }
 
 /* @media (min-width: 650px) and (max-width: 996px) {
@@ -299,7 +302,7 @@
 
 @media (max-width: 770px) {
   #exp {
-    font-size: 9px;
+    font-size: 14px;
   }
 
   .footer-logo {
@@ -424,7 +427,7 @@
     font-size: 9px;
   }
   #exp {
-    font-size: 6px;
+    font-size: 10px;
   }
   #our-services-btn {
     font-size: 10px;
@@ -523,9 +526,9 @@
     height: 230px;
   }
 
-  #exp {
-    font-size: 4px;
-  }
+  /* #exp {
+    font-size: 9px;
+  } */
   .frame25 p,
   .frame25 ul {
     font-size: 10px;
