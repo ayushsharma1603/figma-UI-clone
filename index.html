@@ -381,6 +381,9 @@
             </button>
           </div>
         </div>
+      </div>
+      <div class="container">
+        
         <div class=" cards row gy-5 mb-5">
           <div class=" c1 card-col col-12 col-lg-4">
             <div class="card p-3">
@@ -452,7 +455,7 @@
             </div>
           </div>
         </div>
-        <div class="row gy-5 mb-5">
+        <div class="row gy-5 padding">
           <div class="c1 card-col col-12 col-lg-4">
             <div class="card card-col p-3">
               <div id="cardImg">
@@ -1228,7 +1231,15 @@
                     data-bs-parent="#faqAccordion"
                   >
                     <div class="accordion-body">
-                      Family members may join patients, if they choose, up until the time of their procedure. At that time, we ask that family members remain in the waiting room until the procedure is complete. When you return to the recovery room and awaken, your family may once again join you. Parents will be asked to remain at the center for the entire time of any pediatric procedures so that they may be present as the child awakens. Your child’s comfort, by you the parent is an important part of recovery.
+                      Family members may join patients, if they choose, up until
+                      the time of their procedure. At that time, we ask that
+                      family members remain in the waiting room until the
+                      procedure is complete. When you return to the recovery
+                      room and awaken, your family may once again join you.
+                      Parents will be asked to remain at the center for the
+                      entire time of any pediatric procedures so that they may
+                      be present as the child awakens. Your child’s comfort, by
+                      you the parent is an important part of recovery.
                     </div>
                   </div>
                 </div>
@@ -1329,150 +1340,72 @@
 
     <footer class="footer container-fluid text-white pt-5">
       <div class="container">
-        <!-- <div class="up">
-          <div>
-            <img src="assets/logo2.png" alt="lo">
-          </div>
-          <div></div>
-
-        </div> -->
-
-        <div class="row text-start">
-          <div class="logo-bottom col-lg-5 mb-4">
-            <a href="#"
-              ><div class="footer-logo d-flex mb-3">
-                <img src="assets/logo2.png" alt="logo" /></div
-            ></a>
-
-            <h3 class="text-start">
-              Join Our Newsletter to Keep Up to Date <br />
-              with Us!
-            </h3>
-            <form class="d-flex newsletter-formneeds-validation" novalidate>
-              <div id="inp-btn">
-                <input
-                  type="email"
-                  class="form-control  text-start  me-2"
-                  placeholder="Enter your email"
-                  required
-                />
-                <button class="btn " type="submit">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.4311 18.8201C14.2411 18.8201 14.0511 18.7501 13.9011 18.6001C13.6111 18.3101 13.6111 17.8301 13.9011 17.5401L19.4411 12.0001L13.9011 6.46012C13.6111 6.17012 13.6111 5.69012 13.9011 5.40012C14.1911 5.11012 14.6711 5.11012 14.9611 5.40012L21.0311 11.4701C21.3211 11.7601 21.3211 12.2401 21.0311 12.5301L14.9611 18.6001C14.8111 18.7501 14.6211 18.8201 14.4311 18.8201Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M20.33 12.75H3.5C3.09 12.75 2.75 12.41 2.75 12C2.75 11.59 3.09 11.25 3.5 11.25L20.33 11.25C20.74 11.25 21.08 11.59 21.08 12C21.08 12.41 20.74 12.75 20.33 12.75Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div class="invalid-feedback text-white">
-                Please enter a valid email.
-              </div>
+        <div class="up">
+          <div id="logoDiv">
+            <img src="assets/logo2.png" alt="lo" />
+            <h1>Join Our Newsletter to Keep Up to Date with Us!</h1>
+            <form id="newsletter-form">
+              <input
+                type="email"
+                id="newsletter-input"
+                placeholder="Enter your email"
+              />
+              <button type="submit" id="newsletter-btn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.4311 18.8201C14.2411 18.8201 14.0511 18.7501 13.9011 18.6001C13.6111 18.3101 13.6111 17.8301 13.9011 17.5401L19.4411 12.0001L13.9011 6.46012C13.6111 6.17012 13.6111 5.69012 13.9011 5.40012C14.1911 5.11012 14.6711 5.11012 14.9611 5.40012L21.0311 11.4701C21.3211 11.7601 21.3211 12.2401 21.0311 12.5301L14.9611 18.6001C14.8111 18.7501 14.6211 18.8201 14.4311 18.8201Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M20.33 12.75H3.5C3.09 12.75 2.75 12.41 2.75 12C2.75 11.59 3.09 11.25 3.5 11.25L20.33 11.25C20.74 11.25 21.08 11.59 21.08 12C21.08 12.41 20.74 12.75 20.33 12.75Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
             </form>
           </div>
-          <!-- <div class="col-lg-2"></div> -->
-          <!-- Links Columns -->
-          <div class="col-lg links col-md-3 col-6 mb-4">
-            <ul class="list-unstyled footer-ul">
-              <li>
-                <h6>Information</h6>
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >Health Care</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >Health Solution</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >AI Assistant</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >How We Work</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg links col-md-3 col-6 mb-4">
-            <ul class="list-unstyled footer-ul">
-              <li><h6>Company</h6></li>
-              <li>
-                <a href="#" class="text-white text-decoration-none">About Us</a>
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none">Careers</a>
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >Contact Us</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >How We Work</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg links col-md-3 col-6 mb-4">
-            <ul class="list-unstyled footer-ul">
-              <li><h6>Help Center</h6></li>
-              <li>
-                <a href="#" class="text-white text-decoration-none">FAQs</a>
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >Tutorials</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >Community</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none">API Docs</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg links col-md-3 col-6 mb-4">
-            <ul class="list-unstyled footer-ul">
-              <li>
-                <h6 >Resources</h6>
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >Terms of Service</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none">Feedback</a>
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none">Blogs</a>
-              </li>
-            </ul>
+          <div id="anchorDiv">
+            <div>
+              
+            </div>
+            <div class="linkDiv">
+              <h4 >Information</h4>
+              <div class="links">
+                <a href="#">Health Care</a>
+                <a href="#">Health Solution</a><a href="#">AI Assistant</a
+                ><a href="#">How We Work</a>
+              </div>
+            </div>
+            <div class="linkDiv">
+              <h4 >Company</h4>
+              <div class="links">
+                <a href="#">About Us</a>
+                <a href="#">Careers</a><a href="#">Contact Us</a
+                ><a href="#">How We Work</a>
+              </div>
+            </div>
+            <div class="linkDiv">
+              <h4 >Help Center</h4>
+              <div class="links">
+                <a href="#">FAQs</a>
+                <a href="#">Tutorials</a><a href="#">Community</a
+                ><a href="#">API Documentation</a>
+              </div>
+            </div>
+            <div class="linkDiv">
+              <h4 >Resources</h4>
+              <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a><a href="#">Feedback</a
+                ><a href="#">Blogs</a>
+              </div>
+            </div>
           </div>
         </div>
 

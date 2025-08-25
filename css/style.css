@@ -661,12 +661,25 @@ a {
 }
 
 #our-services-btn {
+  width: 162px;
+  height: 34px;
+
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  vertical-align: center;
+
   padding: 4px 18px;
   border: none;
   background-color: #032c94;
   border-radius: 99px;
   color: white;
-  max-width: 145px;
 }
 
 #our-services-btn + h1 {
@@ -777,7 +790,6 @@ footer .form-control::placeholder {
   border-radius: 16px;
   padding: 16px;
   border: none;
-
 }
 button {
   transition: all 0.5s ease;
@@ -785,11 +797,13 @@ button {
 button:hover {
   box-shadow: 0px 0px 10.6px 0px #61616126;
 }
+/*  */
 
-.card-body a {
-  padding: 13.5px 29.76px;
+.card a {
+  padding: 17.5px 29.76px;
   overflow: hidden;
-
+  position: relative;
+  z-index: 0;
   border-radius: 30px;
   color: #000d44;
 
@@ -1027,7 +1041,6 @@ form {
   color: #788094 !important;
 }
 
-
 .test-form2 {
   margin-top: 80px;
 }
@@ -1060,8 +1073,12 @@ form select option {
 
   color: white !important;
 
-  margin-top: 7%;
+  margin-top: 3%;
   margin-bottom: 40px;
+}
+
+.container .padding {
+  padding-bottom: 71px;
 }
 
 .appointment-btn .button-overlay {
@@ -1116,19 +1133,15 @@ form select option {
 .accordion-body {
   border: none;
   box-shadow: none;
-  
 }
 
-.accordion-item{
+.accordion-item {
   margin-bottom: 12px;
-
 }
 .accordion-button,
-.accordion-body{
+.accordion-body {
   padding: 20px !important;
 }
-
-
 
 .accordion-button:focus {
   box-shadow: none !important;
@@ -1361,8 +1374,6 @@ form select option {
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
-
-
 }
 
 .carousel-indicators {
@@ -1460,8 +1471,6 @@ form select option {
   margin-top: 71px;
 }
 
-
-
 .frame25 h6 {
   font-family: "Urbanist";
   font-weight: 700;
@@ -1482,9 +1491,7 @@ form select option {
   margin-top: 17px !important;
 }
 
-#faq
-
-.doctorimg + div{
+#faq .doctorimg + div {
   display: flex;
   flex-direction: column;
   /* gap: 10px; */
@@ -1579,7 +1586,7 @@ footer {
   justify-content: space-between !important;
   width: 100% !important;
   border-radius: 0px !important;
-  border-bottom: 1px solid #FFFFFF1F !important;
+  border-bottom: 1px solid #ffffff1f !important;
 }
 #inp-btn button {
   appearance: none;
@@ -1656,25 +1663,24 @@ footer {
   margin-right: 27px;
 }
 
-.testimonial-card h3,.frame41 h3{
-  color: #000D44;
+.testimonial-card h3,
+.frame41 h3 {
+  color: #000d44;
 }
 
-.testimonial-card h3{
-  font-family: 'Urbanist';
-font-weight: 700;
-font-size: 34px;
-line-height: 100%;
-text-align: center;
-vertical-align: middle;
-text-transform: capitalize;
-margin-top: 14px;
-
+.testimonial-card h3 {
+  font-family: "Urbanist";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  margin-top: 14px;
 }
-.doctorP + p{
+.doctorP + p {
   max-width: 719px;
 }
-
 
 /* .btn-cont img {
   height: auto;
@@ -1682,7 +1688,7 @@ margin-top: 14px;
   position: absolute;
   top: 50%;
 } */
-.btn-cont button{
+.btn-cont button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1690,29 +1696,27 @@ margin-top: 14px;
   /* position: relative; */
 }
 
-.stars{
+.stars {
   width: 100%;
   /* height: 16px; */
 }
 
-.stars img{
+.stars img {
   width: 106px;
   height: auto;
   object-fit: contain;
 }
-.doctorP{
+.doctorP {
   color: #788094;
-
 }
-.doctorP + p{
+.doctorP + p {
   margin: 0;
 }
-.btn-cont{
+.btn-cont {
   margin-top: 31px;
 }
-.testimonial-card{
-  box-shadow: 0px 0px 10.6px 0px #61616126 ;
-
+.testimonial-card {
+  box-shadow: 0px 0px 10.6px 0px #61616126;
 }
 .formDiv {
   display: flex;
@@ -1720,49 +1724,48 @@ margin-top: 14px;
   justify-content: flex-end;
   padding: 0;
 }
-.formdiv .card{
+.formdiv .card {
   width: 490px;
 }
-.frame41{
+.frame41 {
   padding: 0px 31px !important;
   width: 490px !important;
 }
-form > div{
+form > div {
   margin: 24px 0px !important;
   border-radius: 27px !important;
   border: none !important;
 }
-form input , form select{
+form input,
+form select {
   border: none !important;
   border-radius: 27px !important;
 }
 
-
-.frame41 h3{
-  font-family: 'Urbanist';
-font-weight: 700;
-font-style: Bold;
-font-size: 34px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-text-transform: capitalize;
-color: #000D44;
-margin-top: 39px;
-
-
+.frame41 h3 {
+  font-family: "Urbanist";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 34px;
+  margin-bottom: 0;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #000d44;
+  margin-top: 39px;
 }
 .banner2Img {
   display: flex;
   align-items: center;
   justify-content: space-between !important;
-  
+
   position: relative;
   z-index: 2;
   width: 100%;
 }
-.banner2Img .col-6{
+.banner2Img .col-6 {
   margin-top: 81px !important;
 }
 
@@ -1786,8 +1789,8 @@ margin-top: 39px;
   max-height: 740px;
 }
 
-.footer-ul h6{
-font-size: 20px !important;
+.footer-ul h6 {
+  font-size: 20px !important;
 }
 
 .footer-ul a {
@@ -1833,24 +1836,26 @@ font-size: 20px !important;
   margin: 14px 0px;
 }
 
-.c1,.c2,.c3{
+.c1,
+.c2,
+.c3 {
   display: flex;
   padding: 0;
 }
 
-.c2{
+.c2 {
   justify-content: center;
 }
 
-.c3{
+.c3 {
   justify-content: flex-end;
 }
 
-.c2 .card{
+.c2 .card {
   margin: 0px 12px;
 }
 
-footer form{
+footer form {
   margin-top: 0px !important;
 }
 
@@ -1877,23 +1882,138 @@ footer form{
   font-size: 14px;
 } */
 
-.up{
+.up {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.mailDiv img{
+.up img {
   width: 224px;
-height: 53px;
-
+  height: 53px;
 }
 
-.mailDiv{
+/* Newsletter form wrapper */
+#newsletter-form {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff1f;
+}
+
+/* Input field */
+#newsletter-input {
+  background-color: transparent !important;
+  color: #fff;
+  font-family: "Urbanist";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -1%;
+  padding-left: 0 !important;
+
+  outline: none;
+}
+
+#newsletter-input::placeholder {
+  color: white;
+  opacity: 0.56 !important;
+  font-family: "Urbanist";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -1%;
+
+  color: rgba(255, 255, 255, 0.56);
+  font-weight: 400;
+}
+#logoDiv {
   display: flex;
   flex-direction: column;
-  gap:20px;
   text-align: start;
-
   max-width: 429px;
+}
+
+#logoDiv h1 {
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+  /* max-width: 405px; */
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+.up {
+  margin-bottom: 100px;
+}
+
+/* Arrow button (empty container for SVG) */
+#newsletter-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px; /* size for SVG */
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.linkDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.linkDiv h4 {
+  font-family: "DM Sans";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -1%;
+  text-align: left !important;
+}
+
+.links a {
+  appearance: none;
+  color: white;
+  opacity: 0.56;
+  text-align: left !important;
+
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+#anchorDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+
+  margin-left: 20px;
+}
+
+.banner-btns .button-overlay{
+  width: 89%;
+}
+
+.frame18 .button-overlay {
+  width: 88%;
+}
+
+.frame41 h3{
+  font-size: 28px;
 }
